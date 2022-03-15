@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Key Frames Intro</title>
+	<style type="text/css">
+		
+		body{
+			margin: 0;
+		}
+
+		div{
+			width: 150px;
+			height: 150px;
+			background-color: red;
+
+			animation-name: myani;
+			animation-duration: 5s;
+			/*youk tae place mr stop chin yin*/
+			animation-fill-mode: forwards;
+			/* animation-delay: 3s; */
+			animation-iteration-count: infinite;
+
+			/* animation-iteration-count: 1; */
+
+			/* animation-timing-function: ease; */
+			/* animation-timing-function: ease-in; */
+			/* animation-timing-function: ease-out; */
+			/* animation-timing-function: ease-in-out; */
+			/* animation-timing-function: linear; */
+
+			/* animation-direction: normal; */
+			/* animation-direction: reverse; */
+			/* animation-direction: alternate; */
+			/* animation-direction: alternate-reverse; */
+
+			/* SHORT HAND */
+
+			animation: myani 3s 2 linear alternate 2s;
+
+		}
+
+		@keyframes myani{
+			0%{
+				transform: translateX(500px);
+			}
+			50%{
+				transform: translateX(1000px);
+			}
+
+			100%{
+				transform: translate(1000px,500px);
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>
